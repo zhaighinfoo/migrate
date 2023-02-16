@@ -442,7 +442,7 @@ def build_client_config(profile, url, token, args):
     config['num_parallel'] = args.num_parallel
     config['retry_total'] = args.retry_total
     config['retry_backoff'] = args.retry_backoff
-    config['timeout'] = args.timeout
+    config['timeout'] = 300
     return config
 
 
