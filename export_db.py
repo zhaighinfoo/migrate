@@ -29,6 +29,7 @@ def main():
     url = login_args['host']
     token = login_args.get('token', login_args.get('password'))
     client_config = build_client_config(args.profile, url, token, args)
+    print(client_config)
     session = args.session if args.session else ""
     client_config['session'] = session
     client_config['export_dir'] = os.path.join(client_config['export_dir'], session) + '/'
