@@ -443,6 +443,7 @@ def build_client_config(profile, url, token, args):
     config['retry_total'] = args.retry_total
     config['retry_backoff'] = args.retry_backoff
     config['timeout'] = 300
+    config['skip-missing-users'] = false
     return config
 
 
