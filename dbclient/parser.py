@@ -442,9 +442,9 @@ def build_client_config(profile, url, token, args):
     config['num_parallel'] = args.num_parallel
     config['retry_total'] = args.retry_total
     config['retry_backoff'] = args.retry_backoff
-    # config['timeout'] = 300
-    # config['skip_missing_users'] = False
-    # config['groups_to_keep'] = []
+    config['timeout'] = 300
+    config['skip_missing_users'] = False
+    config['groups_to_keep'] = []
     return config
 
 

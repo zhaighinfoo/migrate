@@ -212,6 +212,9 @@ class HiveClient(ClustersClient):
         :return: database json object
         """
         desc_database_cmd = f'print(get_db_details(\"{db_name}\"))'
+        print(cid)
+        print(ec_id)
+        print(desc_database_cmd)
         results = self.submit_command(cid, ec_id, desc_database_cmd)
         if results['resultType'] != 'text':
             print(json.dumps(results) + '\n')
