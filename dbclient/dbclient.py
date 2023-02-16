@@ -185,7 +185,6 @@ class dbclient:
                 total=self._retry_total, 
                 backoff_factor=self._retry_backoff,
                 status_forcelist=self.http_retry_codes,
-                allowed_methods=frozenset({'DELETE', 'GET', 'HEAD', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'TRACE' }),
                 raise_on_status=False
                 ))
             session = requests.Session()
