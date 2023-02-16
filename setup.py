@@ -15,10 +15,10 @@ setuptools.setup(
     license="https://github.com/databrickslabs/migrate/blob/master/LICENSE",
     packages=setuptools.find_packages(),
     install_requires=[
-          'cron-descriptor',
-          'mlflow-skinny',
-          'sqlparse',
-          'requests'
+        #   'cron-descriptor',
+        #   'mlflow-skinny',
+        #   'sqlparse',
+        #   'requests'
     ],
     py_modules=["export_db","import_db","test_connection","migration_pipeline"],
     classifiers=[
